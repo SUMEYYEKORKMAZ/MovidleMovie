@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movidlemovie.MovieController">
+   <children>
+      <TextField fx:id="txtGuessMovie" layoutX="207.0" layoutY="139.0" prefHeight="25.0" prefWidth="278.0" />
+      <Button fx:id="btnEnter" layoutX="499.0" layoutY="138.0" mnemonicParsing="false" onAction="#btnEnterSetOnAction" prefHeight="4.0" prefWidth="52.0" style="-fx-background-color: #c46206;" text="Enter" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="lblMessage" layoutX="207.0" layoutY="52.0" prefHeight="64.0" prefWidth="344.0" text="Let's guess a movie.." textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vboxMovies" layoutX="192.0" layoutY="173.0" prefHeight="300.0" prefWidth="360.0" />
+
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>
